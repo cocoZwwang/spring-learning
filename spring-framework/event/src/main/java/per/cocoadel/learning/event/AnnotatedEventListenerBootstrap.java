@@ -26,9 +26,9 @@ public class AnnotatedEventListenerBootstrap {
     }
 
      public static  class  MyEventListener extends AbstractEventListener{
-        //@EventListener可以是非Void的方法，但是返回值不能是原生类型，例如例子中只能是Boolean，不能是boolean
+        //@EventListener可以是非Void的方法
         @EventListener(ContextClosedEvent.class)
-        public Boolean onContextClosedEvent(ContextClosedEvent event){
+        public boolean onContextClosedEvent(ContextClosedEvent event){
             System.out.println("MyEventListener: " + event.getClass().getSimpleName());
             return true;
         }
