@@ -1,0 +1,2 @@
+org.springframework.context.ApplicationListener=\
+per.cocoadel.learning.srping.application.state.run.ApplicationPreparedEventListener
