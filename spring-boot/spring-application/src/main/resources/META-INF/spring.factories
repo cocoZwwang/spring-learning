@@ -1,2 +1,8 @@
 org.springframework.context.ApplicationListener=\
 per.cocoadel.learning.srping.application.state.run.ApplicationPreparedEventListener
+
+org.springframework.boot.diagnostics.FailureAnalyzer=\
+per.cocoadel.learning.srping.application.state.run.UnknownErrorFailureAnalyzer
+
+org.springframework.boot.diagnostics.FailureAnalysisReporter=\
+per.cocoadel.learning.srping.application.state.run.ConsoleFailureAnalysisReporter
