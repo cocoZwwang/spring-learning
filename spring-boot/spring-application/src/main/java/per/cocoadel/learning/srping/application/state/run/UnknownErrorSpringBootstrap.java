@@ -3,6 +3,10 @@ package per.cocoadel.learning.srping.application.state.run;
 import org.springframework.boot.WebApplicationType;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 
+/**
+ * 自定义FailureAnalyzer {@link UnknownErrorFailureAnalyzer}
+ * 自定义FailureAnalysisReporter {@link ConsoleFailureAnalysisReporter}
+ */
 public class UnknownErrorSpringBootstrap {
 
     public static void main(String[] args) {
