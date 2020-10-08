@@ -13,6 +13,7 @@
     <modules>
         <module>event</module>
         <module>web-mvc</module>
+        <module>spring-ioc-overview</module>
     </modules>
 
     <artifactId>spring-framework</artifactId>

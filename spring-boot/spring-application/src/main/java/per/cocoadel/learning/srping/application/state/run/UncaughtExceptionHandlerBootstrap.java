@@ -4,6 +4,9 @@ import org.springframework.boot.WebApplicationType;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.context.event.ApplicationReadyEvent;
 
+/**
+ * SpringBootExceptionHandler和UncaughtExceptionHandler的演示
+ */
 public class UncaughtExceptionHandlerBootstrap {
     public static void main(String[] args) {
         Thread.currentThread().setUncaughtExceptionHandler((t, e) -> {
