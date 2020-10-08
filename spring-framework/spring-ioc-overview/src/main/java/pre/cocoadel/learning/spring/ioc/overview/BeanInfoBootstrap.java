@@ -2,6 +2,9 @@ package pre.cocoadel.learning.spring.ioc.overview;
 
 import java.beans.*;
 
+/**
+ * 一个java beans 规范 beanInfo的展示demo
+ */
 public class BeanInfoBootstrap {
     public static void main(String[] args) throws IntrospectionException {
         // 第一个参数：自省的目标，第二个参数：到那一层父类停止自省层
