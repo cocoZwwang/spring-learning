@@ -1,4 +1,4 @@
-package pre.cocoadel.learning.spring.ioc.overview;
+package pre.cocoadel.learning.spring.ioc.overview.javabeans;
 
 import java.beans.*;
 
