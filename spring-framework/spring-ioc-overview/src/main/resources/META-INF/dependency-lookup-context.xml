@@ -12,7 +12,7 @@
         <property name="targetBeanName" value="user"/>
     </bean>
 
-    <bean id ="superUser" class="pre.cocoadel.learning.spring.ioc.overview.domain.SuperUser">
+    <bean id ="superUser" class="pre.cocoadel.learning.spring.ioc.overview.domain.SuperUser" primary="true">
         <property name="address" value="guangzhou"/>
         <property name="name" value="weiss"/>
         <property name="age" value="15"/>

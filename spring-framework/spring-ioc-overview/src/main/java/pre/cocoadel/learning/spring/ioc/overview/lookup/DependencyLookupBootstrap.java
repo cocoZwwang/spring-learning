@@ -50,6 +50,7 @@ public class DependencyLookupBootstrap {
     /**
      * 根据类型单个查找
      * 如果当前类型在容器中存在多个Bean实例，会抛出异常{@link NoUniqueBeanDefinitionException}
+     * 如果在某个Bean上标注了primary="true"则表明这是主Bean，不会抛出异常，会直接返回主Bean
      */
     private static void lookupSingletonByType(BeanFactory beanFactory){
         try {

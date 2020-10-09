@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+    <import resource="classpath:META-INF\dependency-lookup-context.xml"/>
+
+    <!--autowire同过类型注入-->
+    <bean id="userRepository" class="pre.cocoadel.learning.spring.ioc.overview.domain.UserRepository"
+          autowire="byType">
+        <!--        <property name="users">-->
+        <!--            &lt;!&ndash;通过名称集合注入&ndash;&gt;-->
+        <!--            <util:list>-->
+        <!--                &lt;!&ndash;通过名称单个注入&ndash;&gt;-->
+        <!--                <ref bean="user"/>-->
+        <!--                <ref bean="superUser"/>-->
+        <!--            </util:list>-->
+        <!--        </property>-->
+    </bean>
+</beans>
