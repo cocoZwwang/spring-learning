@@ -8,6 +8,7 @@ import org.springframework.context.annotation.Bean;
 
 /**
  * Throwable和退出码映射接口-ExitCodeExceptionMapper的演示
+ * 需要把ExitCodeExceptionMapper注册成Spring Bean
  */
 public class ExitCodeExceptionMapperBootstrap {
     public static void main(String[] args) {

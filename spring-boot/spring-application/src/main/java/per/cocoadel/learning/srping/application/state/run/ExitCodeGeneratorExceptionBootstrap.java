@@ -6,7 +6,8 @@ import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.context.event.ApplicationStartedEvent;
 
 /**
- * 异常退出码的生命周期演示
+ * 通过抛{@link ExitCodeGenerator}异常-定义退出码
+ * 生命周期演示
  */
 public class ExitCodeGeneratorExceptionBootstrap {
     public static void main(String[] args) {
