@@ -4,7 +4,11 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 
 
 /**
- * @Enable 模式注解例子
+ * @Enable 模式驱动 基于接口
+ * {@link org.springframework.context.annotation.ImportSelector} 和
+ * {@link org.springframework.context.annotation.ImportBeanDefinitionRegistrar} 编程例子
+ *
+ *
  */
 @EnableServer(type = Server.Type.Ftp)
 public class EnableServerBootstrap {

@@ -15,6 +15,7 @@
         <module>web-mvc</module>
         <module>spring-ioc-overview</module>
         <module>annotation</module>
+        <module>condition</module>
     </modules>
 
     <artifactId>spring-framework</artifactId>
