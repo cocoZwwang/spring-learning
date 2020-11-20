@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <import resource="dependency-lookup-context.xml"/>
+
+    <alias name="user" alias="ruby-user"/>
+
+    <bean id="cocoAdelCat" class="pre.cocoadel.learning.spring.ioc.overview.domain.Cat">
+        <constructor-arg name="name" value="cocoAdel"/>
+        <constructor-arg name="age" value="18"/>
+        <constructor-arg name="description" value="I am a cat,created by XML for constructor with args"/>
+    </bean>
+
+</beans>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="goodStudent" class="pers.cocoadel.learning.spring.bean.domain.Student" init-method="init" destroy-method="">
+        <property name="name" value="Ruby"/>
+        <property name="age" value="14"/>
+    </bean>
+
+</beans>

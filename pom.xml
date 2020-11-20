@@ -11,6 +11,7 @@
         <module>spring-boot</module>
         <module>spring-framework</module>
         <module>comm</module>
+        <module>spring-framework/bean</module>
     </modules>
     <packaging>pom</packaging>
 

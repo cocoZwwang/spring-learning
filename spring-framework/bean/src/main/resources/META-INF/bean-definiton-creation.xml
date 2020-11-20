@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- 通过静态方法创建 -->
+    <bean id="user-by-static-method" class="pre.cocoadel.learning.spring.ioc.overview.domain.User"
+          factory-method="createUser"/>
+
+    <!--通过FactoryBean + 静态方法示例化-->
+    <!--首先声明FactoryBean Bean-->
+    <bean id="user-factory-bean" class="pers.cocoadel.learning.spring.bean.domain.DefaultUserFactory"/>
+    <!--配置FactoryBean 和 FactoryBean上的静态方法-->
+    <bean id="user-by-factory-bean-static-method" class="pre.cocoadel.learning.spring.ioc.overview.domain.User"
+          factory-bean="user-factory-bean" factory-method="createUser"/>
+
+    <!--通过FactoryBean实创建并且装载Bean-->
+    <!--这里注册的id会当作需要装载的User Bean的beanName-->
+    <!--而UserFactoryBean本身的beanName则是：&user-by-factory-bean -->
+    <bean id="user-by-factory-bean" class="pre.cocoadel.learning.spring.ioc.overview.domain.UserFactoryBean"/>
+
+</beans>
