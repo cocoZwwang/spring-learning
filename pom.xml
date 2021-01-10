@@ -12,6 +12,7 @@
         <module>spring-framework</module>
         <module>comm</module>
         <module>spring-framework/bean</module>
+        <module>spring-framework/environment</module>
     </modules>
     <packaging>pom</packaging>
 
