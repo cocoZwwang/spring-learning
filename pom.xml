@@ -11,8 +11,7 @@
         <module>spring-boot</module>
         <module>spring-framework</module>
         <module>comm</module>
-        <module>spring-framework/bean</module>
-        <module>spring-framework/environment</module>
+        <module>spring-webflux</module>
     </modules>
     <packaging>pom</packaging>
 
@@ -23,6 +22,7 @@
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
         <lombok.version>1.18.10</lombok.version>
+        <maven-war-plugin.version>3.1.0</maven-war-plugin.version>
     </properties>
 
     <dependencyManagement>
@@ -46,7 +46,15 @@
                     <target>${maven.compiler.target}</target>
                 </configuration>
             </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-war-plugin</artifactId>
+                <version>${maven-war-plugin.version}</version>
+                <configuration>
+                    <!--当 web.xml 不存在的时候不会报错！-->
+                    <failOnMissingWebXml>false</failOnMissingWebXml>
+                </configuration>
+            </plugin>
         </plugins>
     </build>
-
 </project>

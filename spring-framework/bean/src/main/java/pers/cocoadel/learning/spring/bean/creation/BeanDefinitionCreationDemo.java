@@ -1,16 +1,12 @@
 package pers.cocoadel.learning.spring.bean.creation;
 
-import com.sun.xml.internal.messaging.saaj.packaging.mime.util.BEncoderStream;
 import org.springframework.beans.factory.FactoryBean;
 import org.springframework.beans.factory.support.AbstractBeanDefinition;
 import org.springframework.beans.factory.support.BeanDefinitionBuilder;
 import org.springframework.beans.factory.support.BeanDefinitionRegistry;
 import org.springframework.beans.factory.xml.XmlBeanDefinitionReader;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-import pre.cocoadel.learning.spring.ioc.overview.domain.Cat;
 import pre.cocoadel.learning.spring.ioc.overview.domain.User;
-
-import java.rmi.registry.Registry;
 import java.util.Map;
 
 public class BeanDefinitionCreationDemo {

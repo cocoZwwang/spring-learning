@@ -16,6 +16,9 @@
         <module>spring-ioc-overview</module>
         <module>annotation</module>
         <module>condition</module>
+        <module>environment</module>
+        <module>bean</module>
+        <module>spring-context-lifecycle</module>
     </modules>
 
     <artifactId>spring-framework</artifactId>

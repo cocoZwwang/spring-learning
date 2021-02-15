@@ -17,6 +17,10 @@
         <module>auto-configure</module>
         <module>spring-boot-event</module>
         <module>spring-application</module>
+        <module>spring-boot-webmvc</module>
+        <module>spring-boot-view</module>
+        <module>spring-boot-rest</module>
+        <module>spring-boot-servlet</module>
     </modules>
 
     <properties>
@@ -38,5 +42,17 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
+
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.springframework.boot</groupId>
+                    <artifactId>spring-boot-maven-plugin</artifactId>
+                    <version>${spring.boot.version}</version>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+    </build>
 
 </project>
