@@ -21,6 +21,7 @@
         <module>spring-boot-view</module>
         <module>spring-boot-rest</module>
         <module>spring-boot-servlet</module>
+        <module>externalized-configuration</module>
     </modules>
 
     <properties>

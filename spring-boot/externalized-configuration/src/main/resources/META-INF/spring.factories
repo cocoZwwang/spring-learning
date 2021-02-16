@@ -1,0 +1,13 @@
+org.springframework.boot.SpringApplicationRunListener =\
+pres.cocoadel.spring.learning.externalized.configuration.listener.ExtendPropertySourceAppListener
+
+# 事件监听器
+org.springframework.context.ApplicationListener=\
+pres.cocoadel.spring.learning.externalized.configuration.listener.ExtendPropertySourceEventListener
+
+
+org.springframework.boot.env.EnvironmentPostProcessor=\
+pres.cocoadel.spring.learning.externalized.configuration.processor.ExtendPropertySourceEnvironmentPostProcessor
+
+org.springframework.context.ApplicationContextInitializer=\
+pres.cocoadel.spring.learning.externalized.configuration.initializer.ExtendPropertySourceApplicationContextInitializer
